@@ -1,0 +1,13 @@
+.product-background {
+    background-color: #fce4ec; 
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.container-login {
+    display: flex;
+    justify-content: flex-start; /* Mengatur konten secara horizontal ke kiri */
+    align-items: center; /* Mengatur konten secara vertikal ke tengah */
+    height: 100vh; /* Menggunakan tinggi layar penuh */
+    
+}

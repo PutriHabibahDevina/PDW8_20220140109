@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDW 7</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-light bg-light fixed-top" data-bs-spy="scroll" data-bs-target="#navbarNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png"alt="logo" width="20" height="30" class="d-inline-block align-text-top">
+            Shade Green
+          </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Product">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Flowers">Flowers</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Checkout">Checkout</a>
+            </li> 
+          </ul>     
+        </div>
+      </nav>
+
+    <!--Home Section-->
+    <section id="Home" class="home-section">
+        <div class="container mt-4"> <!--Memberi jarak antara tepi elemen dengan elemen lain menggunakan margin top 4-->
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="video-container">
+                        <video src="assets/video_florist.mp4" muted autoplay loop></video>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-10 position-absolute top-10 start-5 translate-middle-x">
+                    <div class="toko-content">
+                        <h1 style="font-size: 65px;">Shade Green</h1>
+                        <p style="font-size: 20px;">Blossom with us at Shade Green!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Product Section-->
+    <section id="Product" class="product-section product-background"> <!--Menambahkan background di css-->
+        <div class="container mt-5"> <!--Menambahkan judul-->
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="display-6">Products</h2>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide mx-auto" style="width: 35%;" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100"> <!--Agar gambar mengisi penuh containernya-->
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/564x/5f/2c/23/5f2c23c634b5731709721bc47eca93ee.jpg" class="d-block w-100"
+                        alt="Buket">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/e9/d0/0f/e9d00f82c1f6481390a7b0b72524645b.jpg" class="d-block w-100" alt="Buket">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/61/99/19/6199196f9783d140853a7105986abe57.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <!--Flowers Section-->
+    <section id="Flowers" class="flowers-section"></section>
+        <div class="container mt-5"> <!--Menambahkan judul-->
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="display-6">Flowers</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container"> <!--Memberi jarak antara tepi elemen dengan elemen lain menggunakan margin top 5-->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="https://i.pinimg.com/564x/db/5d/b4/db5db41a117556d0e1b2749a63642284.jpg" class="rounded mx-auto d-block" width="227px" alt="Tulip Pink">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Tulip Pink</h5>
+                    <p class="card-text text-center">Bunga Tulip Pink melambangkan kasih sayang, perhatian, harapan baik, dan cinta.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="https://i.pinimg.com/564x/43/9e/e8/439ee8255fc652b95cd434580781c870.jpg" class="rounded mx-auto d-block" width="150px" alt="Mawar Putih">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Mawar Putih</h5>
+                    <p class="card-text text-center">Bunga Mawar Putih melambangkan kemurnian, kesucian dan ketulusan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="https://i.pinimg.com/564x/c4/45/53/c44553460e6a5c37eb2375b08e9dbed7.jpg" class="rounded mx-auto d-block" width="150px" alt="Sweet Pea">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Sweet Pea</h5>
+                    <p class="card-text text-center">Bunga Sweet Pea melambangkan pertemuan, perpisahan, serta kesenangan yang membahagiakan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="https://i.pinimg.com/564x/a9/0d/c8/a90dc800f51839226ff372af03ffcdee.jpg" class="rounded mx-auto d-block" width="120px" alt="Hydrangea Biru">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Hydrangea Biru</h5>
+                    <p class="card-text text-center">Bunga Hydrangea Biru melambangkan hati yang dingin, permintaan maaf, penolakan lamaran dan penyesalan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="https://i.pinimg.com/564x/12/e8/84/12e8849be29fc8e1eb19403e185fdae8.jpg" class="rounded mx-auto d-block" width="130px" alt="Gardenia Putih">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Gardenia Putih</h5>
+                    <p class="card-text text-center">Bunga Gardenia Putih melambangkan kemurnian, kepolosan, kejernihan, kepercayaan, harapan, dan awal yang baru.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="https://i.pinimg.com/564x/ca/3f/49/ca3f49f40740c2939f617fa2852c9fee.jpg" class="rounded mx-auto d-block" width="240px" alt="Dahlia">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Dahlia</h5>
+                    <p class="card-text text-center">Bunga Dahlia melambangkan ikatan atau komitmen, simbol cinta abadi, lambang dari anugerah dan kekuatan batin, serta perubahan hidup yang positif.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!--Checkout Section-->
+    <section id="Checkout" class="checkout-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card mt-5">
+              <div class="card-body">
+                <!--Elemen Form digunakan apabila kita ingin membuat sebuah form untuk input-a user.-->
+                <form action="/checkout" method="post">
+                  <h2 class="text-center mb-4">Checkout Here!</h2>
+                  <label for="recipient-name1">Nama Pengirim</label>
+                  <input type="text" id="recipient-name1" name="recipient_name1" placeholder="Nama Pengirim" class="form-control mb-3" required> <!--Text INput Fields-->
+
+                  <label for="recipient-name2">Nama Penerima</label>
+                  <input type="text" id="recipient-name2" name="recipient_name2" placeholder="Nama Penerima" class="form-control mb-3" required>
+    
+                  <label for="recipient-address">Alamat Pengiriman</label>
+                  <input type="text" id="recipient-address" name="recipient_address" placeholder="Alamat Pengiriman" class="form-control mb-3" required>
+    
+                  <label for="recipient-phone2">Nomor Telepon Penerima</label>
+                  <input type="tel" id="recipient-phone2" name="recipient_phone2" placeholder="Nomor Telepon Penerima (Opsional)" class="form-control mb-3">
+    
+                  <label for="delivery-date">Tanggal Pengiriman</label>
+                  <input type="date" id="delivery-date" name="delivery_date" class="form-control mb-3" required>
+    
+                  <label for="delivery-time">Waktu Pengiriman</label>
+                  <input type="time" id="delivery-time" name="delivery_time" class="form-control mb-3" required>
+    
+                  <h2>Detail Produk yang Dipesan</h2>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="product_selection[]" id="product-tulip" value="tulip">
+                    <label class="form-check-label" for="product-tulip">
+                      Bunga Tulip Pink
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="product_selection[]" id="product-mawar" value="mawar">
+                    <label class="form-check-label" for="product-mawar">
+                      Buket Mawar Putih
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="product_selection[]" id="product-sweet-pea" value="sweet-pea">
+                    <label class="form-check-label" for="product-sweet-pea">
+                      Bunga Sweet Pea
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="product_selection[]" id="product-hydrangea" value="hydrangea">
+                    <label class="form-check-label" for="product-hydrangea">
+                      Bunga Hydrangea Biru
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="product_selection[]" id="product-gardenia" value="gardenia">
+                    <label class="form-check-label" for="product-gardenia">
+                      Bunga Gardenia Putih
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" name="product_selection[]" id="product-dahlia" value="dahlia">
+                    <label class="form-check-label" for="product-dahlia">
+                      Bunga Dahlia
+                    </label>
+                  </div>                  
+    
+                  <label for="quantity">Jumlah</label>
+                  <input type="number" id="quantity" name="quantity" min="1" class="form-control mb-3" required>
+    
+                  <h2>Pesan Tambahan</h2>
+                  <label for="special-message">Pesan Khusus</label>
+                  <textarea id="special-message" name="special_message" placeholder="Tulis pesan Anda di sini..." class="form-control mb-3"></textarea>
+    
+                  <h2>Metode Pembayaran</h2>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment_method" id="payment-method-transfer" value="transfer" checked>
+                    <label class="form-check-label" for="payment-method-transfer">
+                      Transfer Bank
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment_method" id="payment-method-credit-card" value="credit-card">
+                    <label class="form-check-label" for="payment-method-credit-card">
+                      Kartu Kredit
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment_method" id="payment-method-ewallet" value="ewallet">
+                    <label class="form-check-label" for="payment-method-ewallet">
+                      E-Wallet
+                    </label>
+                  </div>
+    
+                  <button type="submit" id="confirm-order" class="btn btn-primary mt-2">Konfirmasi Pesanan</button>
+                </form>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+      
+    <!--Footer-->
+    <section id="Contact" class="footer-section">
+        <footer class="bg-dark text-light py-4 mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Shade Green Store</h5>
+                  <p>Let's create beautiful memories with flowers from our store!</p>
+                </div>
+                <div class="col-md-6">
+                  <h5>Contact Us</h5>
+                  <p>Email: ShadeGreen@gmail.com</p>
+                  <p>Phone: +62-123-456-7890</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </section>
+     
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Memasukkan Script JavaScript Bootstrap supaya gambar yang ada di carousel bisa digeser-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="main.js"></script>
+</body>
+</html>
